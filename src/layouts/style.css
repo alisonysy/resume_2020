@@ -18,3 +18,7 @@
   margin-right: 8px;
   vertical-align: text-bottom;
 }
+
+.decoLine_bottom{
+  border-bottom: 2px dashed #e1ccc9;
+}

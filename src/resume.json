@@ -3,6 +3,30 @@
     "work":{
       "label_ch":"工作经历",
       "label_en":"Work Experience"
+    },
+    "education":{
+      "label_ch":"教育经历",
+      "label_en":"Education"
+    }
+  },
+  "basics":{
+    "birth":"1995.01",
+    "gender":"女",
+    "mobile":"13632319380",
+    "email":"452592978@qq.com"
+  },
+  "education":{
+    "aucklandUni":{
+      "info":{
+        "uni":"奥克兰大学",
+        "major":"信息管理、市场营销",
+        "gpa":"7.8/9.0",
+        "period":"2016.02 - 2019.05"
+      },
+      "intro":[
+        "专业成绩前10%，是国际性荣誉商学组织Beta Gamma Sigma的终身会员",
+        "主修课程:数据可视化，数据库，项目管理，市场调查等"
+      ]
     }
   },
   "work":[
@@ -22,7 +46,7 @@
   ],
   "skills":[
     "掌握ReactJS，熟悉Hooks使用，结合Redux管理全局状态；熟悉Vue框架，理解React和Vue的实现原理",
-    "熟练掌握HTML(5)、CSS(3)和JavaScript(ES6)，如Promise、async/await进行异步操作、Generator、AJAX",
+    "熟练掌握HTML(5)、CSS(3)和JavaScript(ES6)、JQuery，如Promise、async/await进行异步操作、Generator、AJAX",
     "掌握CSS(3)，如Grid布局和动画等，熟练使用GSAP动画引擎类库制作页面动效",
     "有React Native开发和iOS app上线的项目的经验",
     "熟悉移动端开发，实现响应式布局，了解HTTP基础和Node.js"

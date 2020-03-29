@@ -12,10 +12,18 @@ code {
     monospace;
 }
 
-.ft-14{
-  font-size: 14px;
+.ft-13{
+  font-size: 13px;
 }
 
 .fw-800{
   font-weight: 800;
+}
+
+.innerCard_padding_small .ant-card-body{
+  padding:6px;
+}
+
+.innerCard_padding_medium .ant-card-body{
+  padding:10px;
 }
