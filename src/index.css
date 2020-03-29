@@ -27,3 +27,11 @@ code {
 .innerCard_padding_medium .ant-card-body{
   padding:10px;
 }
+
+.innerCard_padding_zero_bottom .ant-card-body{
+  padding-bottom: 0;
+}
+
+.txt-deep-color{
+  color:#715353;
+}

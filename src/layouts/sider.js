@@ -1,10 +1,9 @@
 import React from 'react';
 import {Row, Col,Typography, Card} from 'antd';
-import {UserOutlined,WomanOutlined,MobileOutlined ,MailOutlined} from '@ant-design/icons';
+import {UserOutlined,WomanOutlined,MobileOutlined ,MailOutlined,HomeOutlined} from '@ant-design/icons';
 
 import './style.css';
 import json from '../resume.json';
-import SectionHead from '../components/section-head';
 import Education from '../components/education-section';
 
 function InfoRow(props){
@@ -17,13 +16,14 @@ function InfoRow(props){
 }
 
 function Basics(props){
-  const {birth,gender,mobile,email} = json.basics;
+  const {birth,gender,mobile,email,website} = json.basics;
   const style_icon = {
     fontSize:20,
-    color:'#dbb6b0'
+    color:'#dbb6b0',
+    marginBottom:5
   }
   return (
-    <Card style={{border:'none'}} className="innerCard_padding_small">
+    <Card style={{border:'none',marginBottom:10}} className="innerCard_padding_small">
       <InfoRow info={birth}>
         <UserOutlined style={style_icon}/>
       </InfoRow>
@@ -36,13 +36,16 @@ function Basics(props){
       <InfoRow info={email}>
         <MailOutlined style={style_icon}/>
       </InfoRow>
+      <InfoRow info={website}>
+        <HomeOutlined style={style_icon}/>
+      </InfoRow>
     </Card>
   )
 }
 
 export default function(){
   return (
-    <Card style={{border:'none'}} className="innerCard_padding_medium">
+    <Card style={{border:'none'}} className="innerCard_padding_medium innerCard_padding_zero_bottom">
       <Basics />
       <Education/>
     </Card>

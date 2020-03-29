@@ -6,23 +6,29 @@ import {Layout} from 'antd';
 
 import Header from './layouts/header';
 import Work from './components/work-section';
+import Skills from './components/skills-section';
+import Projects from './components/projects-section';
 import InnerSider from './layouts/sider';
+import Footer from './layouts/footer';
 
 function App() {
   const {Content,Sider} = Layout;
   return (
     <div className="App">
       <Header />
-      <Layout>
-        <Layout>
+      <Layout style={{backgroundColor:'transparent'}}>
+        <Layout style={{backgroundColor:'transparent'}}>
           <Content >
             <Work />
+            <Skills />
           </Content>
         </Layout>
-        <Sider width='30%'>
+        <Sider width='30%' style={{backgroundColor:'transparent'}}>
           <InnerSider />
         </Sider>
       </Layout>
+      <Projects />
+      <Footer />
     </div>
   );
 }
