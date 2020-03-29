@@ -1,0 +1,20 @@
+.pageHead .ant-avatar img{
+  width:120%;
+  margin-left: -10%;
+}
+
+.pageHead .decoLine{
+  width:100%;
+  border:2px solid #dbb6b0;
+  height: 0;
+}
+
+.decoCircle{
+  display: inline-block;
+  width:16px;
+  height:16px;
+  border-radius: 50%;
+  background-color:  #e1ccc9;
+  margin-right: 8px;
+  vertical-align: text-bottom;
+}
