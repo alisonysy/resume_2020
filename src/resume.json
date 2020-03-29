@@ -50,5 +50,19 @@
     "掌握CSS(3)，如Grid布局和动画等，熟练使用GSAP动画引擎类库制作页面动效",
     "有React Native开发和iOS app上线的项目的经验",
     "熟悉移动端开发，实现响应式布局，了解HTTP基础和Node.js"
-  ]
+  ],
+  "projects":{
+    "ipitaka":{
+      "name":"PITAKA官网",
+      "link":[["官网地址(点我)","https://ipitaka.com"],["动效特辑(点我)",""]],
+      "description":"摒弃原有自带主题，从零根据设计稿在1个月内搭建包含首页、产品展示页、产品购买页、博客、资讯等的官网系统，编写可复用组件，实现展示效果、搜索和加入购物车的业务逻辑，优化用户体验和引导流量转化",
+      "technique":["Shopify Liquid","JavaScript/JQuery","GSAP","Shopify第三方库"]
+    },
+    "cnode":{
+      "name":"Vue.js实现CNode社区",
+      "link":[["Demo(点我)","https://alisonysy.github.io/vuecnode/#/"],["GitHub源码(点我)","https://github.com/alisonysy/vuecnode"]],
+      "description":"利用CNode社区提供的API，使用Vue-CLI 3手脚架、Vue组件、Vue- router搭建仿CNode社区项目。使用Axios发送网页数据请求，运用CSS 3的 SVG 和 filter，与Vue.js transition结合重新布局。",
+      "technique":["Vue.js(Vue-CLI 3, Vue-router)","Axios","JavaScript(ES6)"]
+    }
+  }
 }
