@@ -49,7 +49,7 @@
     "熟练掌握HTML(5)、CSS(3)和JavaScript(ES6)、JQuery，如Promise、async/await进行异步操作、Generator、AJAX",
     "掌握CSS(3)，如Grid布局和动画等，熟练使用GSAP动画引擎类库制作页面动效",
     "有React Native开发和iOS app上线的项目的经验",
-    "熟悉移动端开发，实现响应式布局，了解HTTP基础和Node.js"
+    "熟悉移动端开发，实现响应式布局，了解HTTP基础、Webpack基本配置和工作流程，以及Node.js"
   ],
   "projects":{
     "ipitaka":{
@@ -63,6 +63,12 @@
       "link":[["Demo(点我)","https://alisonysy.github.io/vuecnode/#/"],["GitHub源码(点我)","https://github.com/alisonysy/vuecnode"]],
       "description":"利用CNode社区提供的API，使用Vue-CLI 3手脚架、Vue组件、Vue- router搭建仿CNode社区项目。使用Axios发送网页数据请求，运用CSS 3的 SVG 和 filter，与Vue.js transition结合重新布局。",
       "technique":["Vue.js(Vue-CLI 3, Vue-router)","Axios","JavaScript(ES6)"]
+    },
+    "mockup163":{
+      "name":"在线音乐播放APP",
+      "link":[["GitHub源码(点我)","https://github.com/alisonysy/mockup163"],["Demo小视频(点我)","https://github.com/alisonysy/alison_resume/blob/master/src/img/app-demo.mp4"]],
+      "description":"模拟一个手机音乐APP在线播放页面，包含PC端的歌曲上传和管理页面。用 户端有歌单、最新歌曲、热歌榜界面(内置Counter)，以及搜索功能(Debouncing)， 能在线听音乐，查看滚动播放歌词等。本项目是通过七牛云、LeanCloud数据库储存 上传的音乐文件和相关信息。",
+      "technique":["七牛云","LeanCloud","MVC框架"]
     }
   }
 }
