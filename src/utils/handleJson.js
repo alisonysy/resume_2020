@@ -16,7 +16,7 @@ export const handleRawBoldTag = (r) => {
   };
   let parts = [];
   for(let [k,v] of Object.entries(indexes)){
-    parts[v[0]] = (<span>{v[2].substring(0,k)}<span className="fw-800">{v[1]}</span></span>);
+    parts[v[0]] = (<span key={k}>{v[2].substring(0,k)}<span className="fw-800">{v[1]}</span></span>);
   }
   if(parts.length){
     return (

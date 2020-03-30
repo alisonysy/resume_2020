@@ -16,14 +16,22 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Layout style={{backgroundColor:'transparent'}}>
+      <Layout style={{backgroundColor:'transparent',position:'relative'}}>
         <Layout style={{backgroundColor:'transparent'}}>
           <Content >
             <Work />
             <Skills />
           </Content>
         </Layout>
-        <Sider width='30%' style={{backgroundColor:'transparent'}}>
+        <Sider 
+          width={300}
+          style={{backgroundColor:'transparent',minWidth:250}}
+          breakpoint="md"
+          collapsedWidth="0"
+          theme="light"
+          collapsible={true}
+          zeroWidthTriggerStyle={{backgroundColor:'rgb(225, 204, 201)',color:'#fff'}}
+        >
           <InnerSider />
         </Sider>
       </Layout>

@@ -1,6 +1,6 @@
 import React from 'react';
-import {Row, Col,Typography, Card} from 'antd';
-import {UserOutlined,WomanOutlined,MobileOutlined ,MailOutlined,HomeOutlined} from '@ant-design/icons';
+import {Row, Card} from 'antd';
+import {UserOutlined,WomanOutlined,MobileOutlined ,MailOutlined,HomeOutlined,GithubOutlined} from '@ant-design/icons';
 
 import './style.css';
 import json from '../resume.json';
@@ -16,7 +16,7 @@ function InfoRow(props){
 }
 
 function Basics(props){
-  const {birth,gender,mobile,email,website} = json.basics;
+  const {birth,gender,mobile,email,website,github} = json.basics;
   const style_icon = {
     fontSize:20,
     color:'#dbb6b0',
@@ -38,6 +38,9 @@ function Basics(props){
       </InfoRow>
       <InfoRow info={website}>
         <HomeOutlined style={style_icon}/>
+      </InfoRow>
+      <InfoRow info={github}>
+        <GithubOutlined style={style_icon}/>
       </InfoRow>
     </Card>
   )

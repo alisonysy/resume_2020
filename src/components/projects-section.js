@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row, Col,Typography, Card,Avatar} from 'antd';
+import {Row, Col, Card} from 'antd';
 
 import './style.css';
 import json from '../resume.json';
@@ -12,12 +12,13 @@ function ProjectCard(props){
       <Row>
         <Col span={6} className="ft-13">
           <div style={{marginBottom:6}} className="fw-800 txt-deep-color">{name}</div>
-          {link.map((l)=>{
-            return (<div style={{marginBottom:6}}><a href={l[1]} style={{color:'#dbb6b0'}} target="_blank">{l[0]}</a></div>);
+          {link.map((l,idx)=>{
+            let k = 'project-link'+idx;
+            return (<div style={{marginBottom:6}} key={k}><a href={l[1]} style={{color:'#dbb6b0'}} target="_blank">{l[0]}</a></div>);
           })}
         </Col>
         <Col span={17} className="ft-13" style={{textAlign:'left'}}>
-          <div style={{marginBottom:10}} className="txt-deep-color"><span className="fw-800">描述：</span>{description}</div>
+          <div style={{marginBottom:7}} className="txt-deep-color"><span className="fw-800">描述：</span>{description}</div>
           <div className="txt-deep-color"><span className="fw-800">实现技术：</span>{technique.reduce((prev,cur)=> (prev+" + "+cur))}</div>
         </Col>
       </Row>

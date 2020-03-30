@@ -25,7 +25,7 @@ export default function Education(){
         <Row justify="start" style={{textAlign:'left',marginBottom:8}}>
           <span className="ft-13 txt-deep-color">{edu.info.period}</span>
         </Row>
-        {edu.intro.map((i)=> (<Row justify="start" style={{textAlign:'left'}} className="txt-deep-color">{i}</Row>))}
+        {edu.intro.map((i,idx)=> (<Row justify="start" style={{textAlign:'left'}} className="txt-deep-color" key={'edu'+idx}>{i}</Row>))}
       </Card>
     )
   }

@@ -35,3 +35,11 @@ code {
 .txt-deep-color{
   color:#715353;
 }
+
+
+@media screen and (max-width:767px){
+  aside.ant-layout-sider{
+    position: absolute;
+    box-shadow: 1px 4px 10px 0 rgba(0,0,0,0.3);
+  }
+}

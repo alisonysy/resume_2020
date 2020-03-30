@@ -21,10 +21,11 @@ export default function Skills(){
       <Card style={{border:'none'}} className="innerCard_padding_small">
       {json.skills.map((s,idx)=>{
         return (
-          <Row className="ft-13 txt-deep-color" style={{textAlign:'left',marginBottom:6}} align="middle">
+          <Row className="ft-13 txt-deep-color" style={{textAlign:'left',marginBottom:6}} align="middle" key={'skills'+idx}>
             <Col span={3} offset={1}>
-              {images[idx].map((img)=>{
-                return (<Avatar src={img} size={20} style={{marginRight:8}}></Avatar>)
+              {images[idx].map((img,idx)=>{
+                let k = 'skills-avatar'+idx;
+                return (<Avatar src={img} size={20} style={{marginRight:8}} key={k}></Avatar>)
               })}
             </Col>
             <Col span={20} className="txt-deep-color">

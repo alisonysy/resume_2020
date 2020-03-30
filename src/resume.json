@@ -22,7 +22,8 @@
     "gender":"女",
     "mobile":"13632319380",
     "email":"452592978@qq.com",
-    "website":"alisonysy.github.io/alisonland/"
+    "website":"alisonysy.github.io/alisonland/",
+    "github":"github.com/alisonysy"
   },
   "education":{
     "aucklandUni":{
@@ -53,11 +54,11 @@
       "company":"深圳零壹创新科技公司",
       "position":"前端开发工程师",
       "from":"2019.04",
-      "to":"现在",
+      "to":"2020.05",
       "intro":"以欧美为主要市场，自主研发、设计和销售智能硬件和电子产品",
       "responsibility":[
         "从零搭建以Shopify为销售平台的官网，包括首页、产品页面效果实现和日常维护，开发<bold>页面定制组件</bold>如商标展示栏和轮播等",
-        "熟练使用<bold>GSAP</bold>实现产品页面<bold>各种动态效果</bold>",
+        "熟练使用<bold>GSAP</bold>实现产品页面各种<bold>动态效果</bold>",
         "与后端联合开发公司内部使用的用户差评反馈和产品质量反馈的<bold>钉钉小程序</bold>",
         "根据用户反馈，通过资源懒加载和第三方插件等<bold>优化页面性能</bold>，提升加载速度"
       ]
@@ -73,7 +74,7 @@
   "projects":{
     "ipitaka":{
       "name":"PITAKA官网",
-      "link":[["官网地址(点我)","https://ipitaka.com"],["动效特辑(点我)",""]],
+      "link":[["官网地址(点我)","https://ipitaka.com"],["动效特辑(点我-进入Portfolio)","https://alisonysy.github.io/alisonland/"]],
       "description":"摒弃原有自带主题，从零根据设计稿在1个月内搭建包含首页、产品展示页、产品购买页、博客、资讯等的官网系统，编写可复用组件，实现展示效果、搜索和加入购物车的业务逻辑，优化用户体验和引导流量转化。",
       "technique":["Shopify Liquid","JavaScript/JQuery","GSAP","Shopify第三方库"]
     },

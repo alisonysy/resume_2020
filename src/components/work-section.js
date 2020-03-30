@@ -14,7 +14,7 @@ function Experience(props){
   }
   return (
     <Card style={{width:'100%',border:'none'}} className="innerCard_padding_small">
-      <Row >
+      <Row style={{textAlign:'left'}}>
         <Col span={8}>
           <div className="decoCircle"></div>
           <h5 className="ft-13 txt-deep-color" style={{fontWeight:600,display:'inline-block'}}>{exp.company}</h5>
@@ -23,11 +23,11 @@ function Experience(props){
         <Col span={8}><h5 className="ft-13 txt-deep-color">{exp.from}-{exp.to}</h5></Col>
       </Row>
       <Row>
-        <h5 className="ft-13 txt-deep-color" style={{color:'#dbb6b0'}}>{exp.intro}</h5>
+        <h5 className="ft-13 txt-deep-color" style={{color:'#dbb6b0',textAlign:'left'}}>{exp.intro}</h5>
       </Row>
-      {exp.responsibility.map((r)=>{
+      {exp.responsibility.map((r,idx)=>{
         return (
-          <Row className="ft-13 txt-deep-color" style={{textAlign:'left'}}>{handleRawBoldTag(r)}</Row>
+          <Row className="ft-13 txt-deep-color" style={{textAlign:'left'}} key={'experience'+idx}>{handleRawBoldTag(r)}</Row>
         )
       })}
     </Card>
@@ -35,12 +35,12 @@ function Experience(props){
 }
 
 export default function Work(){
-  const {work} = json.heads.work;
   return (
     <Card style={{border:'none'}} className="innerCard_padding_medium">
       <SectionHead head="work"/>
-      {json.work.map((w)=>{
-        return (<Experience exp={w} />)
+      {json.work.map((w,idx)=>{
+        let k = 'work'+idx;
+        return (<Experience exp={w} key={k} />)
       })}
     </Card>
   )

@@ -19,6 +19,12 @@
   vertical-align: text-bottom;
 }
 
+@media screen and (max-width:767px){
+  .decoCircle{
+    display: none;
+  }
+}
+
 .decoLine_bottom{
   border-bottom: 2px dashed #e1ccc9;
 }
